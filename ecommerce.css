@@ -1,0 +1,445 @@
+.seperator{
+  display: grid;
+  grid-template-rows: 60px 350px 1fr;
+}
+
+body{
+  padding: 0px;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+button{
+  cursor: pointer;
+}
+
+.header{
+  background-color: #131921;
+  margin: 0px;
+  display: grid;
+  padding-left: 20px;
+  padding-right: 15px;
+  
+  grid-template-columns: 180px 1fr 180px;
+}
+
+
+
+.headerleft{
+  width: 180px;
+  height: 60px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.logoholder{
+  border: 1px solid #131921;
+  cursor: pointer;
+  width: 120px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoholder:hover{
+  border: 1px solid white;
+}
+
+.logowhite{
+  height: 30px;
+  
+  
+}
+
+
+.headermiddle{
+  flex: 1;
+  max-width: 850px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-right: 30px;
+
+}
+.bar{
+  flex: 1;
+  width: 0;
+  font-size: 16px;
+  height: 38px;
+  padding-left: 15px;
+  border: none;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.searchbutton{
+  background-color: rgb(254, 189, 105);
+  border: none;
+  width: 45px;
+  height: 40px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  flex-shrink: 0;
+}
+
+.searchlogo{
+  height: 22px;
+  margin-left: 2px;
+  margin-top: 3px;
+}
+
+.headerright{
+  display: flex;
+  align-items: center;
+  
+}
+
+.notcart{
+  color: white;
+  width: 80px;
+  height: 48px;
+  transition: 3ms;
+  border: 1px solid #131921;
+  cursor: pointer;
+  padding-left: 9px;
+}
+
+.notcart:hover{
+  border: 1px solid white;
+}
+
+.return{
+  display: block;
+  font-size: 15px;
+  padding-top: 5px;
+}
+
+.order{
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.cart{
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: 1px solid #131921;
+  height: 48px;
+  width: 90px;
+  cursor: pointer;
+
+}
+
+.cart:hover{
+  border: 1px solid white;
+
+}
+
+.carticon{
+  width: 50px;
+}
+
+.cartamount{
+  color: rgb(240, 136, 4);
+  font-size: 19px;
+  font-weight: 700;
+
+  position: absolute;
+  top: 2px;
+  left: 22px;
+  
+  width: 26px;
+  text-align: center;
+}
+
+.cartname{
+  margin-top: 12px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+
+
+.slider {
+  width: 1238.5px;
+  height: 350px;
+  overflow: hidden;
+  position: relative;
+  border: 0px solid #ccc;
+  border-radius: 0px;
+  position: relative;
+  z-index: 1;}
+
+.slides {
+  display: flex;
+  width: calc(100% * 3); /* Dynamically adjust for the number of images */
+  height: 100%;
+  transition: transform 0.7s ease-in-out;
+}
+
+
+.slides img {
+  width: 100%; 
+  height: 100%;
+  object-fit: cover;
+}
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+  border: none;
+  border-radius: 0%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  z-index: 1000;
+  transition: ease-in-out 0.3s;
+  
+}
+
+.arrow:hover{
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.arrow:active{
+  border: 1px solid #ccc;
+  border-radius: 0px;
+}
+
+.arrow.left {
+  left: 0px;
+}
+
+.arrow.right {
+  right: 0px;
+}
+
+.button-container {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  width: 100%;
+  height: 40px;
+  gap: 0px;
+  z-index: 1100;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.button-container button {
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+  border: none;
+  border-radius: 0px;
+  padding: 0;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+  width: 137px;
+}
+
+.button-container button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.product{
+  width: 250px;
+  margin: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.288);
+  padding-left: 20px;
+  border-radius: 5px;
+  height: 340px;
+  
+  padding-top: auto;
+  padding-bottom: auto;
+
+}
+
+.productimg{
+  width: 100%;
+  object-fit: cover;
+}
+
+.productname{
+  color: black;
+}
+
+.starsimg{
+  width: 100px;
+}
+
+.people{
+  display: inline;
+}
+
+.cartnumber{
+  width: 30px;
+  display: block;
+  color: black;
+}
+
+.cartbutton{
+  color: white;
+  font-size: 20px;
+  background-color: #DE8705;
+  border-radius: 20px;
+  border: 0;
+  height: 40px;
+  width: 120px;
+  margin-left: 60px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin: 20px;
+   
+  position: relative;
+  top: -80px; 
+  z-index: 2;
+}
+
+.product-container {
+  border-radius: 10px;
+  background-color: rgb(241, 241, 241);
+  padding-top: 40px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+
+  border: 1px solid rgb(155, 155, 155);
+
+  display: flex;
+  flex-direction: column;
+  width: 205px;
+  height: 350px;
+}
+
+.product-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 180px;
+  margin-bottom: 20px;
+}
+
+.product-image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.product-name {
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+.product-rating-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.product-rating-stars {
+  width: 100px;
+  margin-right: 6px;
+}
+
+.product-rating-count {
+  color: rgb(1, 124, 182);
+  cursor: pointer;
+  margin-top: 3px;
+}
+
+.product-price {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.product-quantity-container {
+  margin-bottom: 4px;
+  width: 1000px;
+}
+
+.product-spacer {
+  flex: 0;
+}
+
+.added-to-cart {
+  color: rgb(6, 125, 98);
+  
+  font-size: 16px;
+
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+
+  /* At first, the "Added to cart" message will
+     be invisible. Use JavaScript to change the
+     opacity and make it visible. */
+  opacity: 0;
+}
+
+.added-to-cart img {
+  height: 20px;
+  margin-right: 5px;
+}
+
+.add-to-cart-button {
+  width: 100%;
+  padding: 8px;
+  border-radius: 50px;
+  background-color: #FFD814;
+  border: #F7CA00 solid 1px;
+  margin-top: 5px;
+}
+
+.load-more-container {
+  text-align: center;
+  margin: 20px;
+}
+
+.load-more-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.load-more-button:hover {
+  background-color: #0056b3;
+}
+
+.select{
+  width: 48px;
+  height: 26px;
+  font-size: 15px;
+  border-radius: 8px;
+  background-color: #F0F0F0;
+  padding: 3px 5px;
+  border-color: rgba(0, 0, 0, 0.249);
+}
